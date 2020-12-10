@@ -1,10 +1,10 @@
 /**
- * TODO: Finish submitNewPost function to submit form data to the API 
+ * Finish submitNewPost function to submit form data to the API 
  */
 
-const API_URL = "http://localhost:3000/api/posts";
+// const API_URL = "http://localhost:3000/api/posts";
 
-// const API_URL = "https://blogg-api.herokuapp.com/api/posts";
+const API_URL = "https://prafulblogapi.herokuapp.com/api/posts";
 
 const submitNewPost = () => {
     // HINT: Use FormData to store data to send over

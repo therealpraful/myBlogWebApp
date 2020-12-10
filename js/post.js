@@ -1,14 +1,16 @@
 /**
- * TODO (Together): Create getPostIdParam to get the id of the post to use in the request later
- * TODO: Complete getPost function to get post data from API
- * TODO: Complete buildPost function to fill in the post data in the post.html file using ids
+ *  (Together): Create getPostIdParam to get the id of the post to use in the request later
+ *  Complete getPost function to get post data from API
+ *  Complete buildPost function to fill in the post data in the post.html file using ids
  */
 
-const API_URL = "http://localhost:3000/api/posts/";
-const API_BASE_URL = "http://localhost:3000/";
+// const API_URL = "http://localhost:3000/api/posts/";
+// const API_BASE_URL = "http://localhost:3000/";
 
-// const API_URL = "https://blogg-api.herokuapp.com/api/posts/";
-// const API_BASE_URL = "https://blogg-api.herokuapp.com/";
+
+
+const API_URL = "https://prafulblogapi.herokuapp.com/api/posts";
+const API_BASE_URL = "https://prafulblogapi.herokuapp.com/";
 
 window.onload = () => {
     getPost();
@@ -23,7 +25,9 @@ const getPostIdParam = () => {
 const getPost = () => {
     // CODE GOES HERE
     const postId = getPostIdParam();
-    const url = `${API_URL}${postId}`
+    // const url = `${API_URL}${postId}`
+    const url = `${API_URL}/${postId}`
+    console.log(url);
     fetch(url, {
         method :'GET'
     }).then((response) => {

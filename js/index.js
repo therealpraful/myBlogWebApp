@@ -1,10 +1,12 @@
 
 
-const API_URL = "http://localhost:3000/api/posts";
-const API_BASE_URL = "http://localhost:3000/";
+// const API_URL = "http://localhost:3000/api/posts";
+// const API_BASE_URL = "http://localhost:3000/";
 
-// const API_URL = "https://blogg-api.herokuapp.com/api/posts";
-// const API_BASE_URL = "https://blogg-api.herokuapp.com/";
+//Above url is for local API  and below for Heroku where api is hosted.
+
+const API_URL = "https://prafulblogapi.herokuapp.com/api/posts";
+const API_BASE_URL = "https://prafulblogapi.herokuapp.com/";
 
 window.onload = () => {
     getPosts();
